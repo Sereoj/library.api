@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Database\Factories\AuthorFactory;
+use Database\Factories\BookFactory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -13,6 +13,5 @@ class Author extends Seeder
      */
     public function run(): void
     {
-
     }
 }
