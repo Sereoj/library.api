@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('author_id')->constrained('authors')
                 ->cascadeOnUpdate()
                 ->cascadeOnDelete();
-            $table->timestamps('published_at');
+            $table->timestamp('published_at');
         });
     }
 
