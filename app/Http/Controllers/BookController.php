@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\BookRequest;
+use App\Http\Requests\BookUpdateRequest;
 use App\Http\Resources\BookResource;
 use App\Models\Book;
 use Illuminate\Http\Request;
@@ -40,7 +41,7 @@ class BookController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(BookUpdateRequest $request, string $id)
     {
         $book = Book::query()
             ->find($id)
